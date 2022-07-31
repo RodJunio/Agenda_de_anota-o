@@ -16,5 +16,10 @@ namespace Agenda_de_anotação
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
