@@ -8,17 +8,14 @@ namespace Agenda_de_nota
 {
     public class Nota
     {
-        public string Nome { get; set; }
-        public string FoNumber { get; set; }
-        public string Email { get; set; }
-        public string desc { get; set; }
+        public string Title { get; set; }
+       
+        public string Text { get; set; }       
 
-        public Nota(string nome, string fone, string email, string nota )
+        public Nota(string Title = "", string Text  = "")
         {
-            this.Nome = nome;
-            this.FoNumber = fone;
-            this.Email = email;
-            this.desc = nota;
+            this.Title = Title;
+            this.Text = Text;
         }
     }
 }
