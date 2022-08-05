@@ -17,5 +17,10 @@ namespace Agenda_de_anotacao
             this.Title = Title;
             this.Text = Text;
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0} - {1}", this.Title, this.Text);
+        }
     }
 }

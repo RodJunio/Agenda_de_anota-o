@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,16 +38,9 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txbtitle = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(409, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 23);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // richTextBox2
             // 
@@ -115,6 +107,7 @@
             this.lbxAnotacao.Name = "lbxAnotacao";
             this.lbxAnotacao.Size = new System.Drawing.Size(377, 424);
             this.lbxAnotacao.TabIndex = 12;
+            this.lbxAnotacao.SelectedIndexChanged += new System.EventHandler(this.lbxAnotacao_SelectedIndexChanged);
             // 
             // btnAlterar
             // 
@@ -134,6 +127,7 @@
             this.btnSalvar.TabIndex = 14;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -145,12 +139,20 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // txbtitle
+            // 
+            this.txbtitle.Location = new System.Drawing.Point(409, 36);
+            this.txbtitle.Name = "txbtitle";
+            this.txbtitle.Size = new System.Drawing.Size(338, 23);
+            this.txbtitle.TabIndex = 16;
+            // 
             // frmAgendaAnotacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(798, 450);
+            this.Controls.Add(this.txbtitle);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnAlterar);
@@ -161,7 +163,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.textBox1);
             this.Name = "frmAgendaAnotacao";
             this.Text = "Agenda de Anotação";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -173,7 +174,6 @@
         }
 
         #endregion
-        private TextBox textBox1;
         private RichTextBox richTextBox2;
         private Label label1;
         private Label label4;
@@ -184,5 +184,6 @@
         private Button btnAlterar;
         private Button btnSalvar;
         private Button btnCancelar;
+        private TextBox txbtitle;
     }
 }
