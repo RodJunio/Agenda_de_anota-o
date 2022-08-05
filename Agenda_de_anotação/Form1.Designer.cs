@@ -79,7 +79,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Agenda_de_anotação.Properties.Resources._201655;
+            this.pictureBox1.Image = global::Agenda_de_anotacao.Properties.Resources._201655;
             this.pictureBox1.Location = new System.Drawing.Point(458, 258);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 153);

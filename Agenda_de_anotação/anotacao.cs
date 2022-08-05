@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agenda_de_nota
+namespace Agenda_de_anotacao
 {
     public class Nota
     {
